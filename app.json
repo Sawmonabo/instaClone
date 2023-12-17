@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "instaClone",
+    "slug": "instaClone",
+    "version": "1.0.0",
+    "icon": "./assets/instaClone-logo.png",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/instaClone-logo.jpg",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "instaClone",
+      "bundleName": "InstaClone"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#000000"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.ico"
+    }
+  }
+}
