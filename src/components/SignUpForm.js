@@ -18,7 +18,7 @@ import {
   setDoc,
   doc,
   createUserWithEmailAndPassword,
-} from '../lib/firebase'
+} from '../lib/fire'
 
 const signUpFormSchema = Yup.object().shape({
   email: Yup.string().email().required('An email is required'),

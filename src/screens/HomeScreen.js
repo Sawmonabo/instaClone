@@ -6,21 +6,16 @@ import Post from '../components/home/Posts'
 // import { POSTS } from '../mock/posts'
 import BottomTabs from '../components/home/BottomTabs'
 import { TABS } from '../lib/constants/tabs'
-import {
-  collectionGroup,
-  getFirestore,
-  onSnapshot,
-  orderBy,
-} from '../lib/firebase'
+import firebase from '../lib/firebase'
 
 const HomeScreen = ({ navigation }) => {
   const [posts, setPosts] = useState([])
-  const db = getFirestore()
+  const db = firebase.getFirestore()
 
   const fetchPosts = useCallback(() => {
-    const unsubscribe = onSnapshot(
-      collectionGroup(db, 'posts'),
-      orderBy('timestamp', 'desc'),
+    const unsubscribe = firebase.onSnapshot(
+      firebase.collectionGroup(db, 'posts'),
+      firebase.orderBy('timestamp', 'desc'),
       (snapshot) => {
         console.log(
           '[HomeScreen.fetchPosts] - Snapshot Updated: ',

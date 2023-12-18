@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native'
 import { HEADER, getIconUri } from '../../lib/constants/icons'
-import { getAuth, signOut } from '../../lib/firebase'
+import { getAuth, signOut } from '../../lib/fire'
 import config from '../../../config'
 
 const handleLogOut = async () => {

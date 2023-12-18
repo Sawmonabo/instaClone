@@ -9,7 +9,7 @@ import {
   getFirestore,
   arrayUnion,
   arrayRemove,
-} from '../../lib/firebase'
+} from '../../lib/fire'
 
 const Post = ({ post }) => {
   const auth = getAuth()

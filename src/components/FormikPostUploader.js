@@ -12,7 +12,7 @@ import {
   getFirestore,
   serverTimestamp,
   onSnapshot,
-} from '../lib/firebase'
+} from '../lib/fire'
 
 const uploadPostSchema = Yup.object().shape({
   imageUrl: Yup.string().url().required('A URL is required'),

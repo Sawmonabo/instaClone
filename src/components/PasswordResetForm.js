@@ -14,7 +14,7 @@ import {
   getAuth,
   sendPasswordResetEmail,
   confirmPasswordReset,
-} from '../lib/firebase'
+} from '../lib/fire'
 
 const passwordResetFormSchema = Yup.object().shape({
   email: Yup.string()

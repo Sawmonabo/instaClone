@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { SignedInStack, SignedOutStack } from '../navigation'
-import { onAuthStateChanged, getAuth } from '../lib/firebase'
+import { onAuthStateChanged, getAuth } from '../lib/fire'
 
 const AuthNavigation = () => {
   const [currentUser, setCurrentUser] = useState(null)
